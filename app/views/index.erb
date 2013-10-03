@@ -6,4 +6,17 @@
 <img src="/images/congress.jpg" style="width:400px"> OR <img src="/images/honey.jpg" style="width:500px">
 </center>
 
+  <form id="roll" method="post" action="/rolls" data-value="<%= rand(1..6) %>">
+    <input type="hidden" value="<%= rand(1..10) %>" name="value"> 
+    <input type="submit" value="Shuffle Photo">
+  </form>
+
+  <div id="shuffle">
+    <% if @roll %>
+      <%= erb :_die, layout: false %> 
+    <% end %>
+  </div>
+
+</div>
+
 </div>
