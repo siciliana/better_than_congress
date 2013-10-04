@@ -1,8 +1,32 @@
 html {
   font-family: Cubano;
-  background-color: tomato;
-
+  background-color: gray;
 }
+
+.image_container {
+  width: 800px;
+  padding-top: 40px;
+}
+.congress {
+  float:left;
+  width: 40%;
+  height: 200px;
+  margin: 0;
+}
+
+.or {
+  margin: 0;
+  width: 15%;
+  float: left;
+}
+
+.personage img {
+  float:right;
+  width:40%;
+  height:200px;
+  margin: 0;
+}
+
 
 div.navbar navbar navbar-inverse navbar-static-top{
   padding-top: 0;

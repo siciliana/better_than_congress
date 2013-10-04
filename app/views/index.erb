@@ -1,6 +1,5 @@
-  <div class="navbar-wrapper">
 
-          <title>Better Than Congress?</title>
+  <title>Better Than Congress?</title>
 
 
 
@@ -29,27 +28,32 @@
       </div>
     </div>
 
-    <div class="container">
-  <center>
-  <h2>Forget Reid, Boehner...who is better than Congress?</h2>
-  <p> </p>
+    <div class="poll">
+      <center>
+      <h2>Forget Reid, Boehner...who is better than Congress?</h2>
+      <p> </p>
+      
+      <div class="image_container">
+        <div class="congress">
+            <img src="/images/congress.jpg" style="width:400px">
+        </div>
 
-<img src="/images/congress.jpg" style="width:400px">
-<!-- <div id="topic" class="upvote">
-    <a class="upvote"></a>
-    <span class="count">0</span>
-    <a class="downvote"></a>
-    <a class="star"></a>
-</div>
- -->
+        <div class="or">
+             OR 
+        </div>
 
- OR <img id="2" src="/images/honey.jpg" style="width:500px">
-</center>
+        <div class="personage" data-id="<% Photo.all %>">
+           
+        <a href='/shuffle'><img id="2" src="/images/honey.jpg"></a>
+            </center>
+        </div>
+    </div>
 
-  <form id="roll" method="post" action="/rolls" data-value="<%= rand(1..6) %>">
-    <input type="hidden" value="<%= rand(1..10) %>" name="value"> 
-    <input type="hidden" value="Shuffle Photo">
-  </form>
+        <form id="roll" method="post" action="/rolls" data-value="<%= rand(1..6) %>">
+          <input type="hidden" value="<%= rand(1..10) %>" name="value"> 
+          <input type="hidden" value="Shuffle Photo">
+        </form> 
+      </div>
 
   <div id="shuffle">
     <% if @roll %>
@@ -65,7 +69,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a h ref="#">Back to top</a></p>
+        
         <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
