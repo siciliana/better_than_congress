@@ -1,8 +1,21 @@
 html {
   font-family: Cubano;
   background-color: tomato;
+
 }
 
+div.navbar navbar navbar-inverse navbar-static-top{
+  padding-top: 0;
+}
+
+img {
+  width: 400px
+  height: 150px;
+}
+
+.body{ 
+  padding-top: 0;
+}
 .title {
   font-family: Cubano;
 }
@@ -12,6 +25,7 @@ html {
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
   font-family: Cubano;
+  border-margin: 20%;
 }
 th {
   text-align: left;

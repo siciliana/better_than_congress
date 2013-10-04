@@ -1,6 +1,10 @@
 body {
-  padding-top: 70px;
+  padding-top: 0px;
   padding-bottom: 30px;
+}
+
+a.navbar-brand {
+  text-align: justify;
 }
 
 .theme-dropdown .dropdown-menu {

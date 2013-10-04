@@ -1,4 +1,4 @@
-/*!
+/*/*/*!
  * Bootstrap v3.0.0
  *
  * Copyright 2013 Twitter, Inc
@@ -735,7 +735,7 @@ pre code {
   padding: 0;
   font-size: inherit;
   color: inherit;
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
   background-color: transparent;
   border: 0;
 }
@@ -4941,7 +4941,7 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
+    padding-top: 0;
     padding-bottom: 48px;
   }
   .container .jumbotron {
@@ -6802,4 +6802,4 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
-}
+}*/*/
