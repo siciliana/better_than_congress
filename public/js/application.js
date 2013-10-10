@@ -1,11 +1,15 @@
 $(document).ready(function(){
-    $('#personage img').on('click', function(event){
+    $('img').click(function(event){
+        console.log("wtf say ssomething!")
         event.preventDefault;
-        var url = $('/')
-        var data = $
-        $.get(url, data, function)
-    })
-})
+        console.log("this should prevent default")
+
+        $.get('/shuffle', function(response){
+            console.log(response)
+            $('#personage a').html(response)
+        });
+    });
+});
 
 
 
