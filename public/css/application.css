@@ -1,11 +1,11 @@
 html {
   font-family: Cubano;
+    background-image: ('/images/American_Corporate_Flag.svg');
 }
 
 body {
   padding-top: 0px;
   padding-bottom: 30px;
-  background-image: url('/images/American_Corporate_Flag.svg');
 
 }
 
@@ -23,8 +23,9 @@ body {
   font-color: white;
 }
 
-.navbar-brand{
+.navbar-brand {
   color:white;
+  padding-left: 10px;
   text-decoration: none;
   font-size: 30px;
 
@@ -35,25 +36,17 @@ body {
 }
 
 #congress img {
-  position:absolute;
+  /*position:absolute;*/
+  float: left;
   cursor:pointer;
   width: 400px;
   height: 250px;
   margin: 0;
 }
 
-#congress img:hover {
-  image: url('/images/American_Corporate_Flag.svg');
-}
-
-#flip {
-  margin: auto;
-  
-}
-
 #personage img {
-  position:absolute;
-/*  float: right;*/
+  /*position:fixed;*/
+  float: right;
   cursor:pointer;
   width: 400px;
   height:250px;
@@ -99,4 +92,9 @@ src: url('/webfonts/cubano-regular-webfont.ttf'),
 footer { 
   padding-top: 300px;
   font-size: 10px ;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
 }
