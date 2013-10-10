@@ -42,6 +42,10 @@ body {
   margin: 0;
 }
 
+#congress img:hover {
+  image: url('/images/American_Corporate_Flag.svg');
+}
+
 #flip {
   margin: auto;
   
