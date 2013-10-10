@@ -16,8 +16,8 @@ $(document).ready(function(){
         var congressId = $("#congress img").data('photo');
 
         var voteData = { 
-            "vote[congress_photo_id]" : 0, 
-            "vote[personage_photo_id]" : personageId, 
+            "vote[photo_id]" : congressId, 
+            "vote[photo_id]" : personageId, 
             "vote[photo_choice]": "personage" };
 
         $.post('/vote', voteData);
@@ -26,17 +26,17 @@ $(document).ready(function(){
         // }
     });
 
-        $(document).on('click', "#congress img", function(event){
-        var congressId = $("#congress img").data('photo');
-        var personageId = $("#personage img").data('photo');
+    //     $(document).on('click', "#congress img", function(event){
+    //     var congressId = $("#congress img").data('photo');
+    //     var personageId = $("#personage img").data('photo');
 
-        var voteData = { 
-            "vote[congress_photo_id]" : congressId, 
-            "vote[congress_photo_id]" : congressId, 
-            "vote[photo_choice]": "congress" };
+    //     var voteData = { 
+    //         "vote[photo_id]" : congressId, 
+    //         "vote[photo_id]" : personageId, 
+    //         "vote[photo_choice]": "congress" };
 
-            $.post('/vote', voteData);
-    })
+    //         $.post('/vote', voteData);
+    // })
 });
 
 

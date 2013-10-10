@@ -9,17 +9,22 @@
 
     <div class="poll">
         <center>
-        <h2>Forget Reid, Boehner, & Bachmann...who is better than Congress?</h2>
+        <h2>Forget Reid, Boehner, & Bachmann...<br>
+          who is better than Congress?</h2>
         <p> (Click one) </p>
         
         <div class="image_container">
           <div id="congress">
             <img data-photo="<%= @random_congress.id %>" src=<%= @random_congress_url %>>
+            <p>  <%= @random_congress.votes.count %> Votes</p>
           </div>
 
           <div id="personage" >
-            <img data-photo="<%= @random_personage.id %>" src=<%= @random_personage_url %>>       
+            <img data-photo="<%= @random_personage.id %>" src=<%= @random_personage_url %>> <br>
+            <p>  <%= @random_personage.votes.count %> Votes </p>      
           </div>
+
+
         </div>
     </div>   
     
