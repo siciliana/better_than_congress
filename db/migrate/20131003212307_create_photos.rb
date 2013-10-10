@@ -3,7 +3,7 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
       t.string :name
       t.string :url 
-      t.integer :votes
+      t.string :type
     end
   end
 end

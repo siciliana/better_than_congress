@@ -1,6 +1,5 @@
 html {
   font-family: Cubano;
-    background-image: ('/images/American_Corporate_Flag.svg');
 }
 
 body {
@@ -20,7 +19,6 @@ body {
   background-color: black;
   padding-top:0px;
   margin-top:0px;
-  font-color: white;
 }
 
 .navbar-brand {
@@ -36,37 +34,43 @@ body {
 }
 
 #congress img {
-  /*position:absolute;*/
   float: left;
-  cursor:pointer;
-  width: 400px;
+/*  cursor:pointer;
+*/  width: 400px;
   height: 250px;
   margin: 0;
+  border-radius: 75%;
 }
 
 #personage img {
-  /*position:fixed;*/
   float: right;
-  cursor:pointer;
+  /*cursor:pointer;*/
   width: 400px;
   height:250px;
   margin: 0;
+  border-radius: 75%;
 }
 
+.photo_array {
+  visibility:hidden;
+  height:0px;
+}
 
-div.navbar navbar navbar-inverse navbar-static-top{
+div.navbar navbar navbar-inverse navbar-static-top {
   padding-top: 0;
 }
 
-img {
-  width: 400px
-  height: 250px;
-  border-radius: 75%;
-}
 
 .body{ 
   padding-top: 0;
 }
+
+.flag img {
+  border-radius: 0%;
+  margin: 0px auto;
+  width: 800px;
+}
+
 .title {
   font-family: Cubano;
 }
@@ -76,8 +80,8 @@ img {
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
   font-family: Cubano;
-  border-margin: 20%;
 }
+
 th {
   text-align: left;
 }
