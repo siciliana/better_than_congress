@@ -1,86 +1,42 @@
 
   <title>Better Than Congress?</title>
-
-
-
-
-        <div class="navbar navbar-inverse navbar-static-top">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"> > Better-than-Congress</a>
-            </div>
-
-<!--             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-              </ul>
-            </div> -->
-          </div>
-        </div>
-
-      </div>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <a class="navbar-brand" href="#"> > Better-than-Congress</a>
     </div>
+
 
     <div class="poll">
-      <center>
-      <h2>Forget Reid, Boehner...who is better than Congress?</h2>
-      <p> </p>
-      
-      <div class="image_container">
-        <div class="congress">
-            <img src="/images/congress.jpg" style="width:400px">
-        </div>
+        <center>
+        <h2>Forget Reid, Boehner...who is better than Congress?</h2>
+        <p> </p>
+        
+        <div class="image_container">
+          <div id="congress">
 
-        <div class="or">
-             OR 
-        </div>
+            <img src="/images/congress/arrest.jpg">
+            <img src="/images/congress/bachmann.jpg">
+            <img src="/images/congress/boehner.jpg">
+          </div>
 
-        <div class="personage" data-id="<% Photo.all %>">
-           
-        <a href='/shuffle'><img id="2" src="/images/honey.jpg"></a>
-            </center>
-        </div>
+
+
+          <div id="personage">
+            <img src="/images/people/bieber.jpg">
+            <img src="/images/people/britney.jpg">
+            <img src="/images/people/chloe.jpg"> 
+          </div>
     </div>
 
-        <form id="roll" method="post" action="/rolls" data-value="<%= rand(1..6) %>">
-          <input type="hidden" value="<%= rand(1..10) %>" name="value"> 
-          <input type="hidden" value="Shuffle Photo">
-        </form> 
-      </div>
 
-  <div id="shuffle">
-    <% if @roll %>
-      <%= erb :_die, layout: false %> 
-    <% end %>
-  </div>
-
-</div>
-
-</div>
 
 
 
       <!-- FOOTER -->
       <footer>
         
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2013 Fire Congress, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
       </footer>
 
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/holder.js"></script>
   </body>
 </html>

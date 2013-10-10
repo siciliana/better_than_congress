@@ -3,27 +3,34 @@ html {
   background-color: gray;
 }
 
+body {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
 .image_container {
   width: 800px;
   padding-top: 40px;
 }
-.congress {
-  float:left;
-  width: 40%;
-  height: 200px;
+
+#congress img {
+  position: fixed;
+  cursor:pointer;
+  width: 400px;
+  height: 250px;
   margin: 0;
 }
 
-.or {
-  margin: 0;
-  width: 15%;
-  float: left;
+#flip {
+  margin: auto;
+  
 }
 
-.personage img {
-  float:right;
-  width:40%;
-  height:200px;
+#personage img {
+  position:fixed;
+  cursor:pointer;
+  width: 400px;
+  height:250px;
   margin: 0;
 }
 
@@ -34,7 +41,8 @@ div.navbar navbar navbar-inverse navbar-static-top{
 
 img {
   width: 400px
-  height: 150px;
+  height: 250px;
+  border-radius: 20%;
 }
 
 .body{ 
@@ -61,9 +69,6 @@ src: url('/webfonts/cubano-regular-webfont.ttf'),
      url('/webfonts/cubano-regular-webfont.eot'); /* IE9 */
 }
 
-.img {
-  border-radius: 20%;
-}
 
 footer { 
   padding-top: 300px;
