@@ -1,8 +1,9 @@
 $(document).ready(function(){
-    $('img').click(function(event){
-        console.log("wtf say ssomething!")
-        event.preventDefault;
-        console.log("this should prevent default")
+    console.log("YOLO");
+    $('#personage a').click(function(event){
+        event.preventDefault();
+        console.log("wtf say ssomething!");
+        console.log("this should prevent default");
 
         $.get('/shuffle', function(response){
             console.log(response)
