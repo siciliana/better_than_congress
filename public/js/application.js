@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('#shuffle-button').click(function(event){
         event.preventDefault();
 
-        $.get('/shuffle', function(response){
+        $.get('/shuffle_personage', function(response){
             $('#personage').html(response);
         });
    
@@ -15,8 +15,7 @@ $(document).ready(function(){
         var personageId = $("#personage img").data('photo');
         var congressId = $("#congress img").data('photo');
 
-        var voteData = { 
-            "vote[photo_id]" : congressId, 
+        var voteData = {  
             "vote[photo_id]" : personageId, 
             "vote[photo_choice]": "personage" };
 

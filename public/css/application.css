@@ -51,9 +51,9 @@ body {
   border-radius: 75%;
 }
 
-.photo_array {
-  visibility:hidden;
-  height:0px;
+#shuffle_button { 
+  position: fixed;
+  margin: 0 auto;
 }
 
 div.navbar navbar navbar-inverse navbar-static-top {
