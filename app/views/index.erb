@@ -14,23 +14,28 @@
         <p> (Click one) </p>
         
         <div class="image_container">
-          <div id="congress">
-            <img data-photo="<%= @random_congress.id %>" src=<%= @random_congress_url %>>
-            <p>  <%= @random_congress.votes.count %> Votes</p>
-          </div>
+          <ul> 
+            <li>
+              <div id="congress">
+                <img data-photo="<%= @random_congress.id %>" src=<%= @random_congress_url %>>
+                <p>  <%= @random_congress.votes.count %> Votes</p>
+              </div></li>
+      
+            <li><div id="personage" >
+              <img data-photo="<%= @random_personage.id %>" src=<%= @random_personage_url %>> <br>
+              <p>  <%= @random_personage.votes.count %> Votes </p>      
+            </div></li>
 
-          <div id="personage" >
-            <img data-photo="<%= @random_personage.id %>" src=<%= @random_personage_url %>> <br>
-            <p>  <%= @random_personage.votes.count %> Votes </p>      
-          </div>
-
-
+          </ul>
         </div>
     </div>   
     
 <center>
-  <p><br></p>
+
     <div class="button">
+        <p><br></p>
+
+
       <input type="submit" value="Next to top Congress! >>" id="shuffle-button">
 
     </div>
@@ -40,11 +45,11 @@
 
 
       <!-- FOOTER -->
-      <center><footer>
+      <footer>
         
-        <p>&copy; 2013 Fire Congress, Inc. &middot; <a href="http://www.nsa.gov/">Privacy</a> &middot; <a href="/flag">Terms</a>
+        <p><a href="http://drunkdialcongress.org/">&copy; 2013 Fire Congress, Inc. &middot;</a>  <a href="http://www.nsa.gov/">Privacy</a> &middot; <a href="/flag">Terms</a>
         </p>
-      </footer></center>
+      </footer>
 
   </body>
 </html>
