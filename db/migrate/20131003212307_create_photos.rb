@@ -4,7 +4,6 @@ class CreatePhotos < ActiveRecord::Migration
       t.string :name
       t.string :url 
       t.string :category
-      t.integer :vote
     end
   end
 end

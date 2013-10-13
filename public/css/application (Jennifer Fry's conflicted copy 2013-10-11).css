@@ -1,0 +1,108 @@
+html {
+  font-family: Cubano;
+}
+
+body {
+  padding-top: 0px;
+  padding-bottom: 30px;
+
+}
+
+.image_container {
+  width: 800px;
+  padding-top: 40px;
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+.navbar-brand {
+  color:white;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+
+.navbar-brand:hover {
+  color:red;
+}
+
+#congress img {
+  float: left;
+/*  cursor:pointer;
+*/width: 400px;
+  height: 250px;
+  margin: 0;
+  border-radius: 75%;
+}
+
+#personage img {
+  float: right;
+  /*cursor:pointer;*/
+  width: 400px;
+  height:250px;
+  margin: 0;
+  border-radius: 75%;
+}
+
+#shuffle_button { 
+  position: fixed;
+  margin: 0 auto;
+}
+
+div.navbar navbar navbar-inverse navbar-static-top {
+  padding-top: 0;
+}
+
+
+.body{ 
+  padding-top: 0;
+}
+
+.flag img {
+  border-radius: 0%;
+  margin: 0px auto;
+  width: 800px;
+}
+
+.title {
+  font-family: Cubano;
+}
+.container {
+  margin: 20px auto;
+  width: 1000px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  font-family: Cubano;
+}
+
+th {
+  text-align: left;
+}
+
+@font-face {
+font-family: Cubano;
+src: url('/webfonts/cubano-regular-webfont.ttf'),
+     url('/webfonts/cubano-regular-webfont.eot'); /* IE9 */
+}
+
+
+footer { 
+  padding-top: 300px;
+  font-size: 10px ;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: red;
+}
