@@ -1,4 +1,4 @@
-// var counter = 
+// var counter =
 
 $(document).ready(function(){
 
@@ -12,30 +12,30 @@ $(document).ready(function(){
         $.get('/shuffle_congress', function(response){
             $('#congress').html(response);
         });
-   
+
     });
 
     $(document).on('click', "#personage img", function(event){
         console.log("This shows after the personage click")
         var personageId = $("#personage img").data('photo');
-        var personageUrl= $("#personage img").data('url');
+        var personageUrl = $("#personage img").data('url');
         var personageVotes= 0
 
         console.log(personageId)
         console.log(personageUrl)
         // var congressId = $("#congress img").data('photo');
 
-        var voteData1 = {  
-            "vote[photo_id]" : personageId, 
-            "vote[photo_choice]": "personage", 
-            "vote[vote_tally]" : personageVotes +1   
+        var voteData1 = {
+            "photo_id" : personageId,
+            "photo_choice": "personage",
+            "vote_tally" : personageVotes + 1
         };
 
         console.log(voteData1)
-
-        $.post('/vote', voteData1);
+        console.log('what is in personageId? ' + personageId)
+        $.post('/vote/'+personageId, voteData1);
         // $.get('/vote_display', function(response){
-        //     $('.image_container').append(response); 
+        //     $('.image_container').append(response);
         // }
     });
 
@@ -47,8 +47,8 @@ $(document).ready(function(){
 
         console.log(congressId)
         console.log(congressUrl)
-        var voteData2 = { 
-            "vote[photo_id]" : congressId, 
+        var voteData2 = {
+            "vote[photo_id]" : congressId,
             "vote[photo_choice]": "congress",
             "vote[vote_tally]" : congressVotes+1
         };

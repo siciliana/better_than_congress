@@ -12,24 +12,24 @@
         <h2>Forget Reid, Boehner, & Bachmann...<br>
           who is better than Congress?</h2>
         <p> (Click one) </p>
-        
+
         <div class="image_container">
-          <ul> 
+          <ul>
             <li>
               <div id="congress">
                 <img data-photo="<%= @random_congress.id %>" data-url="<%= @random_congress_url %>" data-votes="<%= @votes %>" src=<%= @random_congress_url %>>
                 <p>  <%= @random_congress.votes.count %> Votes</p>
               </div></li>
-      
+
             <li><div id="personage" >
               <img data-photo="<%= @random_personage.id %>" data-url="<%= @random_personage_url %>" data-votes="<%= @votes %>" src=<%= @random_personage_url %>> <br>
-              <p>  <%= @random_personage.votes.count %> Votes </p>      
+              <p>  <%= @total_votes_on_photo %> Votes </p>
             </div></li>
 
           </ul>
         </div>
-    </div>   
-    
+    </div>
+
 <center>
 
     <div class="button">
@@ -41,12 +41,12 @@
     </div>
 
 </center>
-      
+
 
 
       <!-- FOOTER -->
       <footer>
-        
+
         <p><a href="http://drunkdialcongress.org/">&copy; 2013 Fire Congress, Inc. &middot;</a>  <a href="http://www.nsa.gov/">Privacy</a> &middot; <a href="/flag">Terms</a>
         </p>
       </footer>
