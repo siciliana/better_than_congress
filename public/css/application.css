@@ -76,7 +76,7 @@ form {
 }
 
 #button {
-  width: 60px;
+  width: 90px;
   /*float: left;*/
   /*display: block;*/
 }
@@ -128,7 +128,7 @@ src: url('/webfonts/cubano-regular-webfont.ttf'),
 
 
 footer {
-  padding-top: 100px;
+  padding-top: 0px;
   font-size: 10px ;
   margin: 0 auto;
   float: right;

@@ -34,8 +34,18 @@ end
 #   erb :_shuffle_congress, layout: false
 # end
 
-post '/vote/:photo_id' do
-  @photo = Photo.find_by_id(params[:photo_id])
+post '/vote_personage/:photo_id' do
+    @photo = Photo.find_by_id(params[:photo_id])
+    new_vote_tally = 1
+    @vote_tally = @photo.vote_tally
+  p @photo.vote_tally = @vote_tally + 1
+    @photo.save
+
+    redirect to '/'
+end
+
+post '/vote_congress/:photo_id' do
+    @photo = Photo.find_by_id(params[:photo_id])
     new_vote_tally = 1
     @vote_tally = @photo.vote_tally
   p @photo.vote_tally = @vote_tally + 1

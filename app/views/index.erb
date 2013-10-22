@@ -20,7 +20,7 @@
                 <img data-photo="<%= @random_congress.id %>" data-url="<%= @random_congress_url %>" data-votes="<%= @random_congress.vote_tally %>" src=<%= @random_congress_url %>>
 
                     <div id="button">
-                      <form action="/vote/<%=@random_personage.id %>" method="POST">
+                      <form action="/vote_congress/<%=@random_congress.id %>" method="POST">
                         <input type="submit" value="vote"></input>
                       </form>
                         <%= @random_congress.vote_tally %> Votes</p>
@@ -32,10 +32,10 @@
               <div id="personage" >
                <img data-photo="<%= @random_personage.id %>" data-url="<%= @random_personage_url %>" data-votes="<%= @random_personage.vote_tally %>" src=<%= @random_personage_url %>><br>
                   <div id="button">
-                    <form action="/vote/<%=@random_personage.id %>" method="POST">
+                    <form action="/vote_personage/<%=@random_personage.id %>" method="POST">
                       <input type="submit" value="vote"></input>
                     </form>
-                      <%= @random_personage.vote_tally %> Votes </p>
+                      <span id="vote_tally"><%= @random_personage.vote_tally %> Votes</span>
                   </div>
               </div>
 
