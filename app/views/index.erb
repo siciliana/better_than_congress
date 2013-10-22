@@ -17,14 +17,23 @@
           <ul>
             <li>
               <div id="congress">
-                <img data-photo="<%= @random_congress.id %>" data-url="<%= @random_congress_url %>" data-votes="<%= @votes %>" src=<%= @random_congress_url %>>
-                <p>  <%= @random_congress.votes.count %> Votes</p>
-              </div></li>
+                <img data-photo="<%= @random_congress.id %>" data-url="<%= @random_congress_url %>" data-votes="<%= @random_congress.vote_tally %>" src=<%= @random_congress_url %>><br>
+                  <form action="/vote/<%=@random_personage.id %>" method="POST">
+                    <input type="submit" value="vote"></input>
+                  </form>
+                <p>  <%= @random_congress.vote_tally %> Votes</p>
+              </div>
+            </li>
 
-            <li><div id="personage" >
-              <img data-photo="<%= @random_personage.id %>" data-url="<%= @random_personage_url %>" data-votes="<%= @votes %>" src=<%= @random_personage_url %>> <br>
-              <p>  <%= @total_votes_on_photo %> Votes </p>
-            </div></li>
+            <li>
+              <div id="personage" >
+               <img data-photo="<%= @random_personage.id %>" data-url="<%= @random_personage_url %>" data-votes="<%= @random_personage.vote_tally %>" src=<%= @random_personage_url %>><br>
+                  <form action="/vote/<%=@random_personage.id %>" method="POST">
+                    <input type="submit" value="vote"></input>
+                  </form>
+                <p>  <%= @random_personage.vote_tally %> Votes </p>
+              </div>
+            </li>
 
           </ul>
         </div>

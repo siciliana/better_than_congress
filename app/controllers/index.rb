@@ -35,16 +35,13 @@ get '/shuffle_congress' do
 end
 
 post '/vote/:photo_id' do
-  puts "In vote/photo_id"
-  # @vote = Vote.find(params[:photo_id])
-  # # @photo1 = Photo.find_by_id(params[:photo_id])
-  # if @vote
-  #   @vote.vote_tally +=1
-  # else
-  #   Vote.create(params[:photo_id])
-  # end
-  # p params[:photo_id]
-  # @total_votes_on_photo = Photo.find_by_id(params[:photo_id]).votes.count
+  @photo = Photo.find_by_id(params[:photo_id])
+    new_vote_tally = 1
+    @vote_tally = @photo.vote_tally
+  p @photo.vote_tally = @vote_tally + 1
+    @photo.save
+
+    redirect to '/'
 end
 
 # get '/vote_display' do
