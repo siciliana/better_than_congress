@@ -23,16 +23,16 @@ get '/shuffle_personage' do
   erb :_shuffle_personages, layout: false
 end
 
-get '/shuffle_congress' do
-  @congress_photo = Photo.where("category" => "congress")
-  @random_congress = @congress_photo.sample
-  @random_congress_url = @random_congress.url
-  @congress_photo_id = @random_congress.id
-  p @votes_congress = @random_congress.votes.count
+# get '/shuffle_congress' do
+#   @congress_photo = Photo.where("category" => "congress")
+#   @random_congress = @congress_photo.sample
+#   @random_congress_url = @random_congress.url
+#   @congress_photo_id = @random_congress.id
+#   p @votes_congress = @random_congress.votes.count
 
 
-  erb :_shuffle_congress, layout: false
-end
+#   erb :_shuffle_congress, layout: false
+# end
 
 post '/vote/:photo_id' do
   @photo = Photo.find_by_id(params[:photo_id])

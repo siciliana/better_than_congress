@@ -14,41 +14,43 @@
         <p> (Click one) </p>
 
         <div class="image_container">
-          <ul>
-            <li>
-              <div id="congress">
-                <img data-photo="<%= @random_congress.id %>" data-url="<%= @random_congress_url %>" data-votes="<%= @random_congress.vote_tally %>" src=<%= @random_congress_url %>><br>
-                  <form action="/vote/<%=@random_personage.id %>" method="POST">
-                    <input type="submit" value="vote"></input>
-                  </form>
-                <p>  <%= @random_congress.vote_tally %> Votes</p>
-              </div>
-            </li>
 
-            <li>
+
+              <div id="congress">
+                <img data-photo="<%= @random_congress.id %>" data-url="<%= @random_congress_url %>" data-votes="<%= @random_congress.vote_tally %>" src=<%= @random_congress_url %>>
+
+                    <div id="button">
+                      <form action="/vote/<%=@random_personage.id %>" method="POST">
+                        <input type="submit" value="vote"></input>
+                      </form>
+                        <%= @random_congress.vote_tally %> Votes</p>
+                    </div>
+              </div>
+
+
+
               <div id="personage" >
                <img data-photo="<%= @random_personage.id %>" data-url="<%= @random_personage_url %>" data-votes="<%= @random_personage.vote_tally %>" src=<%= @random_personage_url %>><br>
-                  <form action="/vote/<%=@random_personage.id %>" method="POST">
-                    <input type="submit" value="vote"></input>
-                  </form>
-                <p>  <%= @random_personage.vote_tally %> Votes </p>
+                  <div id="button">
+                    <form action="/vote/<%=@random_personage.id %>" method="POST">
+                      <input type="submit" value="vote"></input>
+                    </form>
+                      <%= @random_personage.vote_tally %> Votes </p>
+                  </div>
               </div>
-            </li>
 
-          </ul>
+
+
         </div>
     </div>
 
 <center>
 
-    <div class="button">
+<!--     <div class="button">
         <p><br></p>
-
-
       <input type="submit" value="Next to top Congress! >>" id="shuffle-button">
-
     </div>
-
+ -->
 </center>
 
 

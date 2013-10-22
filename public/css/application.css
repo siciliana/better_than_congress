@@ -9,7 +9,7 @@ body {
 }
 
 .image_container {
-  width: 800px;
+  width: 900px;
   padding-top: 40px;
 }
 
@@ -38,13 +38,14 @@ body {
   list-style-type: none;
 }
 
+
 #congress img {
   float: left;
   width: 350px;
   height: 250px;
-  /*margin: 0;*/
-  border-radius: 50%;
-  margin-bottom: 100px;
+  position: relative;
+  border-radius: 20%;
+  margin-bottom: 15px;
 }
 
 #personage img {
@@ -52,28 +53,49 @@ body {
   width: 350px;
   height:250px;
   margin: 0;
-  border-radius: 50%;
-  margin-bottom: 100px;
+  border-radius: 20%;
+  margin-bottom: 15px;
+  /*position: relative;*/
 }
 
-.button {
-  text-align: center;
+#personage {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
 }
-input #shuffle_button { 
+
+#congress {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+form {
+  width: 50px;
+}
+
+#button {
+  width: 60px;
+  /*float: left;*/
+  /*display: block;*/
+}
+
+/*input #shuffle_button {
   padding-top: 150px;
   margin-top: 150px;
-  /*position: fixed;*/
+  position: fixed;
   bottom: 0;
   width: 800px;
   text-align: center;
-}
+}*/
 
 div.navbar navbar navbar-inverse navbar-static-top {
   padding-top: 0;
 }
 
 
-.body{ 
+.body{
   padding-top: 0;
 }
 
@@ -105,7 +127,7 @@ src: url('/webfonts/cubano-regular-webfont.ttf'),
 }
 
 
-footer { 
+footer {
   padding-top: 100px;
   font-size: 10px ;
   margin: 0 auto;
